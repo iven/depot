@@ -2,13 +2,19 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.carts {
+.carts, #side #cart{
   .cart_title {
     font: bold 120% 'arial', sans-serif;
   }
 
   .item_price, .total_line {
     text-align: right;
+  }
+
+  .item_remove a {
+    font-size: large;
+    color: red;
+    text-decoration: none;
   }
 
   .total_line, .total_cell {

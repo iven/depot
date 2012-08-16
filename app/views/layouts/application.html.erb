@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Depot</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body class='<%= controller.controller_name %>'>
+  <head>
+    <title>Depot</title>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body class='<%= controller.controller_name %>'>
     <div id='banner'>
-        <%= image_tag('logo.png') %>
-        <%= @page_title || 'Pragmatic Bookshelf' %>
+      <%= image_tag('logo.png') %>
+      <%= @page_title || 'Pragmatic Bookshelf' %>
     </div>
     <div id='columns'>
-        <div id='side'>
-            <a href='/'>Home</a><br />
-            <a href='/faq'>Questions</a><br />
-            <a href='/news'>News</a><br />
-            <a href='/contact'>Contact</a><br />
-            <%= time %><br />
+      <div id='side'>
+        <div id='cart'>
+          <%= render(@cart) %>
         </div>
-        <div id='main'>
-            <%= yield %>
-        </div>
+        <ul>
+          <li><a href='/'>Home</a></li>
+          <li><a href='/faq'>Questions</a></li>
+          <li><a href='/news'>News</a></li>
+          <li><a href='/contact'>Contact</a></li>
+        </ul>
+        <%= time %><br />
+      </div>
+      <div id='main'>
+        <%= yield %>
+      </div>
     </div>
-</body>
+  </body>
 </html>

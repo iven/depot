@@ -6,6 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+LineItem.delete_all
+Cart.delete_all
 Product.delete_all
 
 Product.create(:title => 'Web Design for Developers',
