@@ -1,4 +1,0 @@
-depot
-=====
-
-Simple rails application.
