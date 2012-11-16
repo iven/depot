@@ -11,10 +11,11 @@
     text-align: right;
   }
 
-  .item_remove a {
+  .item_control a {
     font-size: large;
     color: red;
     text-decoration: none;
+    font: bold 100% 'monospace', sans-serif;
   }
 
   .total_line, .total_cell {
