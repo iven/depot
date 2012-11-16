@@ -5,6 +5,7 @@ one:
   cart: one
   quantity: 1
   price: 22.22
+  order: one
 
 two:
   product: one
