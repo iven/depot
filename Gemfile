@@ -38,3 +38,4 @@ gem 'jquery-rails'
 # gem 'debugger'
 
 gem 'rails-i18n'
+gem 'will_paginate', '~>3.0'
