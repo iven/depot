@@ -57,8 +57,12 @@ Depot::Application.routes.draw do
   #   end
 
   resources :line_items do
-    get 'increase', on: :member
-    get 'decrease', on: :member
+    get :increase, on: :member
+    get :decrease, on: :member
+  end
+
+  resources :products do
+    get :who_bought, on: :member
   end
 
   # You can have the root of your site routed with "root"
