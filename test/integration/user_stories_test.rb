@@ -25,10 +25,10 @@ class UserStoriesTest < ActionDispatch::IntegrationTest
 
     post_via_redirect("/orders",
                       order: { name:     "Dave Thomas",
-                                address:  "123 The Street",
-                                email:    "dave@example.com",
-                                pay_type: "Check"
-                              }
+                               address:  "123 The Street",
+                               email:    "dave@example.com",
+                               pay_type: "Check"
+                             }
                      )
     assert_response :success
     assert_template "index"
