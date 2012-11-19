@@ -53,4 +53,24 @@ class UserStoriesTest < ActionDispatch::IntegrationTest
     assert_equal "Iven Hsu <ivenvd@gmail.com>", mail[:from].value
     assert_equal "Pragmatic Store Order Confirmation", mail.subject
   end
+
+  test "should fail on access of sensitive data" do
+    user = users(:one)
+    get "/login"
+    assert_response :success
+
+    post_via_redirect "/login", name: user.name, password: 'secret'
+    assert_response :success
+    assert_template "index"
+
+    get "/users"
+    assert_response :success
+    assert_template "index"
+
+    delete "/logout"
+    assert_redirected_to store_url
+
+    get "/users"
+    assert_redirected_to login_url
+  end
 end
