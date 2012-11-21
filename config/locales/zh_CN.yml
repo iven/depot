@@ -1,0 +1,71 @@
+zh_CN:
+  layouts:
+    application:
+      title:          "实用书架"
+      home:           "首页"
+      questions:      "常见问题"
+      news:           "新闻中心"
+      contact:        "联系我们"
+      orders:         "订单"
+      products:       "产品"
+      users:          "用户"
+      languages:      "语言"
+
+  store:
+    index:
+      title:          "实用书籍目录"
+      add:            "加入购物车"
+
+  carts:
+    cart:
+      title:          "我的购物车"
+      checkout:       "结算订单"
+      empty:          "清空购物车"
+
+  orders:
+    new:
+      legend:         "请输入订单详情"
+    form:
+      pay_prompt:     "选择一种支付方式"
+    payment_types:
+      check:          "支票"
+      credit_card:    "信用卡"
+      purchase_order: "采购单"
+
+  helpers:
+    submit:
+      order:
+        create:       "提交%{model}"
+        update:       "保存%{model}"
+
+  activerecord:
+    models:
+      order:          "订单"
+    attributes:
+      order:
+        name:         "姓名"
+        address:      "地址"
+        email:        "电子邮件"
+        pay_type:     "支付方式"
+    errors:
+      messages:
+        inclusion:    "不在列表中"
+        blank:        "不能为空"
+
+  errors:
+    template:
+      body:           "请修正以下错误后重试："
+      header:
+        one:          "在提交%{model}时发生了一个问题"
+        other:        "在提交%{model}时发生了%{count}个问题"
+
+  number:
+    currency:
+      format:
+        unit:         "$US"
+        precision:    2
+        separator:    "."
+        delimiter:    ","
+        format:       "%n&nbsp;%u"
+
+  thanks:             "谢谢惠顾！"

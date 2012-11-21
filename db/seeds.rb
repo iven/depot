@@ -29,7 +29,8 @@ Product.create(title: 'Web Design for Developers',
                    all the way to implementation.
                  </p>},
                image_url:   '/assets/wd4d.jpg',    
-               price: 42.95
+               price: 42.95,
+               locale: :en
               )
 # . . .
 Product.create(title: 'Programming Ruby 1.9',
@@ -40,7 +41,8 @@ Product.create(title: 'Programming Ruby 1.9',
                    you should add Ruby to your toolbox.
                  </p>},
                image_url: '/assets/ruby.jpg',
-               price: 49.50
+               price: 49.50,
+               locale: :zh_CN
               )
 # . . .
 
@@ -55,6 +57,7 @@ Product.create(title: 'Rails Test Prescriptions',
                    including Cucumber, Shoulda, Machinist, Mocha, and Rcov.
                  </p>},
                image_url: '/assets/rtp.jpg',
-               price: 43.75
+               price: 43.75,
+               locale: :zh_CN
               )
 

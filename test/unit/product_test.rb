@@ -5,7 +5,9 @@ class ProductTest < ActiveSupport::TestCase
     Product.new(title: 'My Book Title',
                 description: 'yyy',
                 price: 1,
-                image_url: image_url)
+                image_url: image_url,
+                locale: :en
+               )
   end
 
   test 'product attributes must not be empty' do

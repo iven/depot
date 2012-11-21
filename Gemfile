@@ -37,5 +37,5 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 # To use debugger
 # gem 'debugger'
 
-gem 'rails-i18n'
+#gem 'rails-i18n'
 gem 'will_paginate', '~>3.0'

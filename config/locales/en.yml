@@ -1,5 +1,67 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
-
 en:
-  hello: "Hello world"
+  layouts:
+    application:
+      title:           "Pragmatic Bookshelf"
+      home:            "Home"
+      questions:       "Questions"
+      news:            "News"
+      contact:         "Contact"
+      orders:          "Orders"
+      products:        "Products"
+      users:           "Users"
+      languages:       "Languages"
+
+  store:
+    index:
+      title:           "Your Pragmatic Catalog"
+      add:             "Add to Cart"
+
+  carts:
+    cart:
+      title:           "Your Cart"
+      checkout:        "Checkout"
+      empty:           "Empty Cart"
+
+  orders:
+    new:
+      legend:          "Please Enter Your Details"
+    form:
+      pay_prompt:      "Select a payment method"
+    payment_types:
+      check:           "Check"
+      credit_card:     "Credit card"
+      purchase_order:  "Purchase order"
+
+  helpers:
+    label:
+      order:
+        pay_type:      "Pay with"
+    submit:
+      order:
+        create:        "Place %{model}"
+        update:        "Save %{model}"
+
+  activerecord:
+    models:
+      order:           "Order"
+    attributes:
+      order:
+        email:         "E-mail"
+
+  errors:
+    template:
+      body:            "Please correct the following error(s) and retry:"
+      header:
+        one:           "1 error occurs when modifying %{model}"
+        other:         "%{count} errors occurs when modifying %{model}"
+
+  number:
+    currency:
+      format:
+        unit:          "$"
+        precision:     2
+        separator:     "."
+        delimiter:     ","
+        format:        "%u%n"
+
+  thanks:              "Thank you for your order"

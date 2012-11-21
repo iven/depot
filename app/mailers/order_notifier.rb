@@ -1,5 +1,6 @@
 class OrderNotifier < ActionMailer::Base
   default from: "Iven Hsu <ivenvd@gmail.com>"
+  default_url_options[:locale] = :en
 
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
